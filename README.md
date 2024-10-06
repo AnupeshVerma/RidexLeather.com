@@ -1,1 +1,1 @@
-# RedixLeather.com
+# RidexLeather.com
