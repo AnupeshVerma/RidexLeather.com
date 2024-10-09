@@ -1,5 +1,4 @@
 import React from 'react';
-import { GoogleLogin } from 'react-google-login';
 import Form from '../../components/molecules/Form';
 import Link from '../../components/atoms/Link';
 import Text from '../../components/atoms/Text';
@@ -18,14 +17,7 @@ const Login = () => {
 
   const loginHeader = (
     <div className="w-full flex justify-center mb-4">
-      <GoogleLogin
-        className='w-full flex justify-evenly items-center'
-        clientId="YOUR_GOOGLE_CLIENT_ID"
-        buttonText="Login with Google"
-        onSuccess={(credentialResponse) => { console.log('Google login success:', credentialResponse); }}
-        onError={() => { console.log('Google login failed'); }}
-        cookiePolicy={'single_host_origin'}
-      />
+      
     </div>
     
     
