@@ -1,7 +1,10 @@
-import Login from "./pages/auth/Login";
+import AppRoutes from "./routes";
+
 function App() {
   return (
-  <Login/>
+    <div className="App">
+      <AppRoutes />
+    </div>
   );
 }
 
