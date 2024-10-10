@@ -10,7 +10,7 @@ const InputBox = ({ label, placeholder, value, onChange, name, type = "text" }) 
         placeholder={placeholder}
         value={value}
         onChange={onChange}
-        className="border px-3 py-2 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-400 w-full"
+        className="border px-3 py-2 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-primary-color-light w-full"
       />
     </div>
   );

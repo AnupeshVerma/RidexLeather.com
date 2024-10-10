@@ -5,8 +5,8 @@ import Text from '../../components/atoms/Text';
 
 const Login = () => {
   const inputConfigs = [
-    { name: 'username', placeholder: 'Enter your username', label: 'Username' , type: 'email'},
-    { name: 'password', placeholder: 'Enter your password', label: 'Password', type: 'password' }
+    { name: 'email', placeholder: 'email@domain.com', label: 'Your email', type: 'email' },
+    { name: 'password', placeholder: '* * * * * * * * *', label: 'Password', type: 'password' }
   ];
 
   const handleLoginSubmit = (formData) => {
@@ -17,7 +17,7 @@ const Login = () => {
   const loginHeader = (
     <div className="w-full flex flex-col items-center mb-4">
       <button className="w-4/5 flex items-center justify-around bg-white border border-gray-300 rounded-xl px-4 py-2 shadow-sm hover:shadow-lg transition-shadow">
-        <img src="images/google_logo.png" alt="Google logo" className="w-5 h-5 mr-2"/>
+        <img src="images/google_logo.png" alt="Google logo" className="w-5 h-5 mr-2" />
         <span className="text-gray-700">Sign in with Google</span>
       </button>
 
@@ -29,7 +29,6 @@ const Login = () => {
       </div>
     </div>
   );
-  
 
   const loginFooter = (
     <div className="text-end space-y-2">
