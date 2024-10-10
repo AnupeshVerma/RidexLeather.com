@@ -7,7 +7,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<MainRoutes />} />
+        <Route path="/*" element={<MainRoutes />} />
         <Route path="/auth/*" element={<AuthRoutes />} />
         {/* Catch all non-existent routes */}
         <Route path="*" element={<NotFound />} />
