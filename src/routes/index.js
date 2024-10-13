@@ -1,17 +1,26 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Fragment } from "react";
+import Navbar from "../components/layout/Navbar";
+import NotFound from "../pages/NotFound";
 import AuthRoutes from "./AuthRoutes";
 import MainRoutes from "./MainRoutes";
-import NotFound from "../pages/NotFound";
 
 function App() {
   return (
     <Router>
-      <Routes>
-        <Route path="/*" element={<MainRoutes />} />
-        <Route path="/auth/*" element={<AuthRoutes />} />
-        {/* Catch all non-existent routes */}
-        <Route path="*" element={<NotFound />} />
-      </Routes>
+      <Fragment>
+        <Navbar />
+        <section className="container">
+          {/* <Alert /> */}
+          <Routes>
+            <Route path="/" element={<MainRoutes />} />
+            <Route path="/auth/*" element={<AuthRoutes />} />
+
+            {/* Catch all non-existent routes */}
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </section>
+      </Fragment>
     </Router>
   );
 }

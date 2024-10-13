@@ -17,7 +17,7 @@ const Login = () => {
   const loginHeader = (
     <div className="w-full flex flex-col items-center mb-4">
       <button className="w-4/5 flex items-center justify-around bg-white border border-gray-300 rounded-xl px-4 py-2 shadow-sm hover:shadow-lg transition-shadow">
-        <img src="images/google_logo.png" alt="Google logo" className="w-5 h-5 mr-2" />
+        <img src={`${process.env.PUBLIC_URL}/images/google_logo.png`} alt="Google logo" className="w-5 h-5 mr-2" />
         <span className="text-gray-700">Sign in with Google</span>
       </button>
 
